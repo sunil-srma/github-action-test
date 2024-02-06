@@ -1,0 +1,33 @@
+name: complex
+
+on: push
+
+jobs:
+  ubuntu:
+    runs-on: ubuntu-latest
+    name: job 1
+    steps:
+      - name: print date
+        run: date
+
+  windows:
+    runs-on: windows-latest
+    name: job 2
+    steps:
+      - name: print date
+        run: date
+
+  macos:
+    runs-on: macos-latest
+    name: job 3
+    steps:
+      - name: print date
+        run: date
+
+  ubuntu20:
+    runs-on: ubuntu@20.04
+    name: job 4
+    steps:
+      - name: print date
+        run: date
+    needs: [ubuntu, windows, macos]
