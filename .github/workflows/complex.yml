@@ -5,28 +5,28 @@ on: push
 jobs:
   ubuntu:
     runs-on: ubuntu-latest
-    name: job 1
+    name: ubuntu
     steps:
       - name: print date
         run: date
 
   windows:
     runs-on: windows-latest
-    name: job 2
+    name: windows
     steps:
       - name: print date
         run: date
 
   macos:
     runs-on: macos-latest
-    name: job 3
+    name: macos
     steps:
       - name: print date
         run: date
 
   ubuntu20:
     runs-on: ubuntu@20.04
-    name: job 4
+    name: ubuntu20
     steps:
       - name: print date
         run: date
